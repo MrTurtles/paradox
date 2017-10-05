@@ -1,2 +1,2 @@
-# paradox
-Bot using heroku, 24/7!
+# Tutorial-Bot
+This is the bot we're creating in the video series, each branch is an episode number.
