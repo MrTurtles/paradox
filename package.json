@@ -1,9 +1,10 @@
 {
-  "name": "Tutorial-Bot",
-  "version": "1.1.5",
-  "description": "An Idiot's Guide tutorial Bot",
+  "name": "Paradox",
+  "version": "0.0.1",
+  "description": "Paradox server bot",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "An Idiot's Guide",
