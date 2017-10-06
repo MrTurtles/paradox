@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json'); 
+//const settings = require('../settings.json'); 
 exports.run = (client, message) => {
+  let prefix = ",";
   message.delete();
   let guild = message.guild;
     const embed45 = new Discord.RichEmbed()
@@ -18,19 +19,19 @@ exports.run = (client, message) => {
     const embed47 = new Discord.RichEmbed()
       .setColor(0x00AE86)
       .setTimestamp()
-      .addField(`Explaination`, `This means you're a Admin in **${guild.name}**!\nThank you for Moderating in **${guild.name}**\nUse ${settings.prefix}help (in a server!!) and look at (admin) or lower to see what commands you can use.`)
+      .addField(`Explaination`, `This means you're a Admin in **${guild.name}**!\nThank you for Moderating in **${guild.name}**\nUse ${prefix}help (in a server!!) and look at (admin) or lower to see what commands you can use.`)
     const embed48 = new Discord.RichEmbed()
       .setColor(0x00AE86)
       .setTimestamp()
-      .addField(`Explaination`, `This means you're a Moderator in **${guild.name}**!\nThank you for Moderating in **${guild.name}**\nUse ${settings.prefix}help (in a server!!) and look at (mod) or lower to see what commands you can use.`)
+      .addField(`Explaination`, `This means you're a Moderator in **${guild.name}**!\nThank you for Moderating in **${guild.name}**\nUse ${prefix}help (in a server!!) and look at (mod) or lower to see what commands you can use.`)
     const embed49 = new Discord.RichEmbed()
       .setColor(0x00AE86)
       .setTimestamp()
-      .addField(`Explaination`, `This means you're a Helper in **${guild.name}**!\nThank you for Helping in **${guild.name}**\nUse ${settings.prefix}help (in a server!!) and look at (helper) or lower to see what commands you can use.`)
+      .addField(`Explaination`, `This means you're a Helper in **${guild.name}**!\nThank you for Helping in **${guild.name}**\nUse ${prefix}help (in a server!!) and look at (helper) or lower to see what commands you can use.`)
     const embed50 = new Discord.RichEmbed()
       .setColor(0x00AE86)
       .setTimestamp()
-      .addField(`Explaination`, `This means you're a Member in **${guild.name}**.\nThank you for supporting in **${guild.name}**\nUse ${settings.prefix}help (in a server!!) and look at (member) or lower to see what commands you can use.`)
+      .addField(`Explaination`, `This means you're a Member in **${guild.name}**.\nThank you for supporting in **${guild.name}**\nUse ${prefix}help (in a server!!) and look at (member) or lower to see what commands you can use.`)
     const embed51 = new Discord.RichEmbed()
       .setColor(0x00AE86)
       .setTimestamp()

@@ -1,8 +1,9 @@
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 const Discord = require('discord.js')
 //const sales = require('../commands/salestatus.js');
 module.exports = message => {
   let client = message.client;
+  let prefix = ",";
   if (message.author.bot) return;
 
   //if (sales.login = `,help | Off Sale!`) {
@@ -32,10 +33,10 @@ module.exports = message => {
     .addField(`Error :no_entry:`, `Commands do not work in Direct Messages!`)
   if (message.content.startsWith(`gn`)) return message.react('🙋' && `😘`);
   if (message.content.startsWith(`<@343356172125863936>`)) return message.react('🎉');
-  if (!message.content.startsWith(settings.prefix)) return;
+  if (!message.content.startsWith(prefix)) return;
   if (message.channel.type == 'dm') return message.channel.sendEmbed(embed66);
   if (message.channel.type == 'group') return message.channel.sendEmbed(embed66);
-  let command = message.content.split(' ')[0].slice(settings.prefix.length);
+  let command = message.content.split(' ')[0].slice(prefix.length);
   let params = message.content.split(' ').slice(1);
   let perms = client.elevation(message);
   let cmd;

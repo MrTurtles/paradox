@@ -1,6 +1,6 @@
 {
-  "name": "Paradox",
-  "version": "0.0.1",
+  "name": "paradox-discord-bot",
+  "version": "1.0.0",
   "description": "Paradox server bot",
   "main": "app.js",
   "scripts": {
@@ -15,5 +15,18 @@
     "moment": "^2.17.1",
     "ms": "^0.7.2",
     "return-deep-diff": "^0.2.7"
-  }
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrTurtles/paradox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrTurtles/paradox/issues"
+  },
+  "homepage": "https://github.com/MrTurtles/paradox#readme"
 }

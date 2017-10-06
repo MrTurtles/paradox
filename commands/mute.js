@@ -1,8 +1,17 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 //const sleep = require('system-sleep');
-const sleep = require('sleep');
+//const sleep = require('sleep');
 exports.run = (client, message, args) => {
+    message.delete();
+    message.channel.sendEmbed(
+      new Discord.RichEmbed()
+      .setColor(0x00EEFF3E)
+      .addField(`Under Maintance :warning:`, `This command is under maintance!\nAdd the Muted role manually.`));
+      return;
+  
+  /*
+  let prefix = ",";
   message.delete();
   let time = args.slice(1).join(' ');
   //let reason = args.slice(2).join(' ');
@@ -26,7 +35,7 @@ exports.run = (client, message, args) => {
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('I do not have the correct permissions.').then(m => m.delete(5000)).catch(console.error);
 
   if (message.guild.member(user).roles.has(muteRole.id)) {
-    message.reply(`This user is already muted.\nTo unmute this user use: ${settings.prefix}unmute [user]`).then(m => m.delete(5000)); 
+    message.reply(`This user is already muted.\nTo unmute this user use: ${prefix}unmute [user]`).then(m => m.delete(5000)); 
   } else {
     message.guild.member(user).addRole(muteRole).then(() => {
       message.reply(`:white_check_mark: Succesfully muted ${user.username}#${user.discriminator} for ${time} minutes`).then(m => m.delete(5000));
@@ -37,7 +46,7 @@ exports.run = (client, message, args) => {
     }); 
   } 
 
-};
+*/};
 
 exports.conf = {
   enabled: true,

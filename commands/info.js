@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 exports.run = (client, message) => {
   message.delete();
   const embed2 = new Discord.RichEmbed()

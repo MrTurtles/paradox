@@ -1,4 +1,4 @@
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 const login = require('./salestatus.js');
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {

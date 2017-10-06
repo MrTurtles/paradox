@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 exports.run = (client, message, args) => {
+  let prefix = ",";
   message.delete();
   let time = args.slice(1).join(' ').split('?');
   let reason = args.slice(2).join(' ');
@@ -24,7 +25,7 @@ exports.run = (client, message, args) => {
     message.reply(`:white_check_mark: Succesfully unmuted ${user.username}#${user.discriminator}`).then(m => m.delete(5000));
     client.channels.get(modlog.id).sendEmbed(embed).catch(console.error);    
   } else {
-      message.reply(`That user is not muted.\nTo mute him/her use: ${settings.prefix}mute [user] [duration] [reason]`).then(m => m.delete(5000));
+      message.reply(`That user is not muted.\nTo mute him/her use: ${prefix}mute [user] [duration] [reason]`).then(m => m.delete(5000));
   };
 
 };

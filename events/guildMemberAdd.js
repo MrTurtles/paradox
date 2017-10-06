@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json');
+//const settings = require('../settings.json');
 module.exports = member => {
+  let ownerid = 275303108589125633;
   let guild = member.guild;
   let modlog = guild.channels.find('name', 'join-leave');
   if (!modlog) return;
@@ -8,7 +9,7 @@ module.exports = member => {
     .setColor(0x0013CF0E)
     .setTimestamp()
     .addField('Welcome!', `${member.user} Joined! :wave:`));
-  if (member.id === settings.ownerid) {
+  if (member.id === ownerid) {
     guild.defaultChannel.sendMessage('**Welcome <@275303108589125633>, the owner of me!**')
   }
 };
