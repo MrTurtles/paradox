@@ -62,6 +62,7 @@ module.exports = message => {
     if (perms < cmd.conf.permLevel) {
        message.channel.sendEmbed(embed65).then(m => m.delete(5000));
        message.delete();
+      return;
     }
     cmd.run(client, message, params);
   }
