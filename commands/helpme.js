@@ -39,6 +39,6 @@ exports.conf = {
 exports.help = {
   name: 'helpme',
   rank: 'Member',
-  description: '(MEMBER) - Helpme is a command for Paradox, this is so we can have better overview of \n                          problems.\n                          **If you do this make sure you include a good explaination WITH a screenshot!**\n',
+  description: '(MEMBER) - Helpme is a command for Paradox, this is so we can have better overview of the problems.\n**If you do this make sure you include a good explaination WITH a screenshot!**\n',
   usage: 'helpme'
 };
