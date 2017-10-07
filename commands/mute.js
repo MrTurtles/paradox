@@ -3,14 +3,14 @@ const Discord = require('discord.js');
 //const sleep = require('system-sleep');
 //const sleep = require('sleep');
 exports.run = (client, message, args) => {
-    message.delete();
+    /*message.delete();
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00EEFF3E)
       .addField(`Under Maintance :warning:`, `This command is under maintance!\nAdd the Muted role manually.`));
       return;
+  */
   
-  /*
   let prefix = ",";
   message.delete();
   let time = args.slice(1).join(' ');
@@ -46,7 +46,7 @@ exports.run = (client, message, args) => {
     }); 
   } 
 
-*/};
+};
 
 exports.conf = {
   enabled: true,
