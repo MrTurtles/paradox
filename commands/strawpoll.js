@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00AB29D4)
-      .addField(`Strawpoll by ${user}`, question)).then(function(message) {
+      .addField(`Strawpoll by ${user}`, `${question}`)).then(function(message) {
         message.react('✅');
         message.react('❌');
     });
