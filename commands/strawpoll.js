@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
     if (!question) return message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00EB1A1A)
-      .addField(`Error :no_entry:`, `Missing Question!`)).then(message.delete(5000));
+      .addField(`Error :no_entry:`, `Missing Question!`)).then(m => m.delete(5000));
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00AB29D4)
