@@ -1,19 +1,27 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
-    
+    let question = args.join(' ');
+    let user = message.author.username
+    message.channel.sendEmbed(
+      new Discord.RichEmbed()
+      .setColor(0x00AB29D4)
+      .addField(`Strawpoll by ${user}`, question)).then(function(message) {
+        message.react('✅');
+        message.react('❌');
+    });
 };
 
 exports.conf = {
   enabled: true,
-  guildOnly: false,
-  aliases: ['ball', '8'],
-  permLevel: 1
+  guildOnly: true,
+  aliases: [],
+  permLevel: 3
 };
 
 exports.help = {
   name: 'strawpoll',
   rank: 'Moderator',
-  description: '(Moderator) - Returns messages like Yes, No, etc.',
+  description: '(Moderator) - Makes strawpoll with the discord reactions',
   usage: 'strawpoll [text]'
 };
 
