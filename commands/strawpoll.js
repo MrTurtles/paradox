@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
     let question = args.join(' ');
     let user = message.author.username
+    if (!args) return message.channel.sendEmbed(
+      new Discord.RichEmbed()
+      .setColor(0x00AB29D4)
+      .addField(`Error :no_entry:`, `Missing Question!`))
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00AB29D4)
