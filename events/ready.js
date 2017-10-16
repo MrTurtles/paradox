@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 module.exports = client => {
   console.log(chalk.green('I\'m Online'));
   let login = ',buy | On Sale!'
-  client.user.setGame(login);
+  client.user.setGame(login, 'https://www.twitch.tv/slappy826');
   client.user.setStatus('online');
   console.log(chalk.green(login));
 };
