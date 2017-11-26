@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
-  client.user.setStatus('test', 1, 'https://www.twitch.tv/dave_mrturtles');
+  let login = args.join(' ');
+  client.user.setGame(login, 'https://www.twitch.tv/roblox');
 };
 
 exports.conf = {
