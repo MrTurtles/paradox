@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   let login = args.join(' ');
+  if(!login) return message.channel.sendMessage("No status filled in!").then(m => m.delete(7000));
   client.user.setGame(login, 'https://www.twitch.tv/roblox');
 };
 
