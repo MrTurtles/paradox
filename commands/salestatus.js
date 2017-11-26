@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
   message.delete();
   if (message.content.endsWith('on')) {
     let login = `,buy | On Sale!`;
-    client.user.setGame(login);
+    client.user.setGame(login, 'https://www.twitch.tv/roblox');
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x0013CF0E)
@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
       });
   } else if (message.content.endsWith('off')) {
     let login = `,buy | Off Sale!`;
-    client.user.setGame(login);
+    client.user.setGame(login, 'https://www.twitch.tv/roblox');
     message.channel.sendEmbed(
       new Discord.RichEmbed()
       .setColor(0x00E90B0B)
